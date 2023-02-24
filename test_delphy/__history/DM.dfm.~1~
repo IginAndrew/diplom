@@ -1,0 +1,17 @@
+object DataModule1: TDataModule1
+  OldCreateOrder = False
+  Height = 250
+  Width = 375
+  object ADOConnection1: TADOConnection
+    Left = 72
+    Top = 64
+  end
+  object ADOTable1: TADOTable
+    Left = 176
+    Top = 64
+  end
+  object DataSource1: TDataSource
+    Left = 272
+    Top = 56
+  end
+end

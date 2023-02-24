@@ -1,0 +1,732 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+html:focus-within {
+  scroll-behavior: smooth;
+}
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@font-face {
+  font-family: Open Sans;
+  src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Open Sans Bold;
+  src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff);
+  font-weight: 700;
+  font-style: normal;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1px;
+  min-height: 450px;
+  width: 100%;
+  background-image: url(https://disk.yandex.ru/i/mU1j9burcYY2uA);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  z-index: 1;
+}
+
+.header::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+}
+
+.menu-logo {
+  justify-content: space-between;
+  width: 100%;
+  display: flex;
+  align-items: start;
+  padding: 30px 15% 125px 15%;
+  z-index: 3;
+}
+
+.menu-list {
+  display: flex;
+  right: 10%;
+  top: 45px;
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.list-latest {
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  align-items: start;
+}
+
+main {
+  display: block;
+}
+
+.item {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: normal;
+  font-family: "Open Sans", Arial, sans-serif;
+  text-align: center;
+  margin-left: 33px;
+  text-transform: uppercase;
+}
+
+.name-tag:nth-child(3n + 1) {
+  margin-left: 0;
+}
+
+.item a:link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.item a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+.item a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.align-items a:active {
+  color: #ffffff;
+}
+
+.intro {
+  display: block;
+  width: 600px;
+  min-height: 110px;
+  max-height: auto;
+  text-align: center;
+  z-index: 3;
+}
+
+.header-title {
+  font-size: 42px;
+  line-height: auto;
+  color: #ffffff;
+  font-family: "Open Sans Bold", Arial, sans-serif;
+/*  text-transform: uppercase;*/
+}
+
+/*main {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}*/
+
+.list {
+  display: block;
+  align-items: start;
+}
+
+/*.list-new {
+display: flex;
+}*/
+
+.list-big {
+  display: flex;
+  width: auto;
+  height: auto;
+  padding: 60px 1px 1px 1px;
+  word-wrap: break-word;
+}
+
+.travel {
+  text-align: left;
+  width: 370px;
+  height: auto;
+  padding-left: 30px;
+}
+
+.frame {
+  display: block;
+  width: 365px;
+  padding: 1px 1px 1px 30px;
+  text-aligh: left;
+}
+
+.frame-catagor {
+  word-spacing: 20px;
+  font-size: 14px;
+  line-height: normal;
+  color: #b59f5b;
+  font-weight: 700;
+  font-family: "Open Sans Bold";
+  text-transform: uppercase;
+  padding: 1px;
+  list-style-type: none;
+}
+
+.frame-catagor a:link {
+  color: #b59f5b;
+  text-decoration: none;
+}
+
+.frame-catagor a:visited {
+  color: #b59f5b;
+  text-decoration: none;
+}
+.frame-catagor a:hover {
+  color: #b59f5b;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.frame-catagor a:active {
+  color: #b59f5b;
+}
+
+.frame-title {
+  font-size: 20px;
+  line-height: 24px;
+  color: #0f0d0e;
+  font-weight: 700;
+  font-family: "Open Sans Bold", Arial, sans-serif;
+  text-transform: uppercase;
+  padding: 15px 1px 35px 1px;
+}
+
+.frame-title:link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.frame-title:visited {
+  color: #000000;
+  text-decoration: none;
+}
+.frame-title:hover {
+  color: #b59f5b;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.frame-title:active {
+  color: #000000;
+}
+
+.date-author {
+  display: flex;
+  padding: 1px 1px 55px 1px;
+}
+
+.date {
+  font-size: 12px;
+  line-height: normal;
+  color: #888888;
+  font-weight: 700;
+  font-family: "Open Sans", Arial, sans-serif;
+  padding-right: 15px;
+}
+
+.author {
+  font-size: 12px;
+  line-height: normal;
+  color: #000000;
+  font-weight: 400;
+  font-family: "Open Sans Bold", Arial, sans-serif;
+}
+
+.text {
+  width: 367px;
+  height: auto;
+  font-size: 15px;
+  line-height: 22px;
+  color: #0f0d0e;
+  font-weight: 400;
+  font-family: "Open Sans", Arial, sans-serif;
+  padding: 1px;
+}
+
+.picture {
+  width: 380px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.frame-title a:link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.frame-title a:visited {
+  color: #000000;
+  text-decoration: none;
+}
+.frame-title a:hover {
+  color: #b59f5b;
+  text-decoration: none;
+}
+
+.frame-title a:active {
+  color: #000000;
+  cursor: pointer;
+}
+
+.latest-posts-mini {
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+  margin-left: 120px;
+  align-items: center;
+}
+
+.title-posts-mini, .tags-posts-mini {
+  display: block;
+  text-align: center;
+  margin-top: 60px;
+  width: 270px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 14px;
+  line-height: normal;
+  color: #000000;
+  font-weight: 700;
+  font-family: "Open Sans Bold", Arial, sans-serif;
+  text-transform: uppercase;
+  padding: 1px;
+}
+
+.title-posts-mini h4:link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.title-posts-mini h4:visited {
+  color: #000000;
+  text-decoration: none;
+}
+.title-posts-mini h4:hover {
+  color: #b59f5b;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.title-posts-mini h4:active {
+  color: #000000;
+  cursor: pointer;
+}
+
+.title-posts-mini ::after {
+  content: "";
+  display: block;
+  width: 66px;
+  height: 3px;
+  background-color: #b59f5b;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+
+.list-mini {
+  display: flex;
+  margin-bottom: 22px;
+  word-wrap: break-word;
+}
+
+.picture-mini {
+  width: 70px;
+  height: 70px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 1px;
+}
+
+.frame-mini {
+  position: absolute;
+  text-align: left;
+  margin-left: 90px;
+  padding: 1px;
+  width: 180px;
+}
+
+.date-mini {
+  font-size: 12px;
+  line-height: normal;
+  color: #000000;
+  font-weight: 400;
+  font-family: "Open Sans", Arial, sans-serif;
+  padding: 1px;
+}
+
+.frame-title-mini {
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  font-weight: 700;
+  font-family: "Open Sans Bold", Arial, sans-serif;
+  text-transform: uppercase;
+  padding: 1px;
+}
+
+.frame-title-mini a:link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.frame-title-mini a:visited {
+  color: #000000;
+  text-decoration: none;
+}
+.frame-title-mini a:hover {
+  color: #b59f5b;
+  text-decoration: none;
+}
+
+.frame-title-mini a:active {
+  color: #000000;
+  cursor: pointer;
+}
+
+.search-group {
+  height: 50px;
+  width: 100%;
+  display: flex;
+}
+
+.search-group:hover {
+  outline: 1px solid #b59f5b;
+}
+
+.field-mini {
+  box-sizing: border-box;
+  height: 50px;
+  width: 220px;
+  padding-left: 20px;
+  border: 0;
+  background-color: #f4f7f6;
+  font-size: 13px;
+  line-height: 40px;
+  color: #000000;
+  font-weight: 400;
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+.field-mini:focus {
+  outline: 1px solid #b59f5b;
+}
+
+.button-mini {
+  box-sizing: border-box;
+  height: 50px;
+  width: 50px;
+  background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/search.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 20px;
+  text-decoration: none;
+  background-color: #b59f5b;
+  text-decoration: none;
+  padding: 0;
+  border: 0;
+}
+
+.button-mini:hover {
+  background-color: #323232;
+}
+
+.tag-mini {
+  width: 270px;
+  height: auto;
+}
+
+/*.tag-mini:nth-child(n+1){
+margin-top: 60px;
+}*/
+
+.email-mini {
+  box-sizing: border-box;
+  height: 50px;
+  width: 270px;
+  padding: 20px;
+  border: 0;
+  background-color: #f4f7f6;
+  font-size: 13px;
+  line-height: 40px;
+  color: #000000;
+  font-weight: 400;
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+.email-mini:focus {
+  outline: 1px solid #b59f5b;
+  
+
+}
+
+.email-mini:hover {
+  outline: 1px solid #b59f5b;
+}
+
+.email-button-mini {
+  width: 270px;
+  height: 50px;
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: normal;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Open Sans Bold", Arial, sans-serif;
+  text-transform: uppercase;
+  background: #b59f5b;
+  text-decoration: none;
+  padding: 0;
+  border: 0;
+}
+
+.email-button-mini:hover {
+  background-color: #323232;
+}
+
+.name-tags {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1px;
+  list-style-type: none;
+}
+
+.name-tag {
+  box-sizing: border-box;
+  height: 25px;
+  width: 80px;
+  font-size: 12px;
+  line-height: normal;
+  color: #0f0d0e;
+  font-weight: 700;
+  font-family: "Open Sans Bold", Arial, sans-serif;
+  text-transform: uppercase;
+  border: 3px solid rgba(244, 243, 241, 0);
+  margin: 5px;
+  text-align: center;
+}
+
+.name-tag:nth-child(3n + 1) {
+  margin-left: 0;
+}
+
+.name-tag a:link {
+  color: #0f0d0e;
+  text-decoration: none;
+}
+
+.name-tag a:visited {
+  color: #0f0d0e;
+  text-decoration: none;
+}
+.name-tag a:hover {
+  outline: 3px solid #b59f5b;
+  outline-offset: 5px;
+  cursor: pointer;
+}
+
+.name-tag a:active {
+  color: #0f0d0e;
+}
+
+.catagoria {
+  display: block;
+  /*flex-direction: column;*/
+  text-align: left;
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  height: auto;
+}
+
+sup {
+  color: #b59f5b;
+  margin-left: 5px;
+}
+
+.catagoria-tag {
+  border-bottom: 1px solid #eeeeee;
+  width: 270px;
+  height: auto;
+  font-size: 14px;
+  line-height: normal;
+  color: #000000;
+  font-weight: 700;
+  font-family: "Open Sans Bold", Arial, sans-serif;
+  padding: 20px;
+}
+
+.catagoria-tag a:link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.catagoria-tag a:visited {
+  color: #000000;
+  text-decoration: none;
+}
+.catagoria-tag a:hover {
+  color: #b59f5b;
+  text-decoration: none;
+}
+
+.catagoria-tag a:active {
+  color: #000000;
+  cursor: pointer;
+}
+
+.social-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1px;
+}
+
+.social-footer {
+  margin: 95px 0px 105px 0px;
+}
+
+.dribbble {
+  margin-right: 30px;
+}
+
+.pinterest {
+  margin-right: 30px;
+}
+
+.socials-link {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-size: 24px;
+  background-position: center center;
+}
+
+.socials-link-dribbble {
+  background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/001-dribbble.svg);
+}
+
+.socials-link-pinterest {
+  background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/002-pinterest.svg);
+}
+
+.socials-link-tumblr {
+  background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/003-tumblr.svg);
+}
+
+.socials-link-text,
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.copyrights {
+  padding: 1px;
+  text-align: center;
+}
+
+.copyrights-text {
+  font-size: 12px;
+  line-height: 40px;
+  color: #999999;
+  font-weight: 700;
+  font-family: "Open Sans Bold", Arial, sans-serif;
+  text-transform: capitalize;
+}
+
+.picture a:hover {
+  outline: 1px solid #b59f5b;
+  cursor: pointer;
+}
+
+.picture a:active {
+  outline: 1px solid #b59f5b;
+  cursor: pointer;
+}
+
+.picture-mini a:hover {
+  outline: 1px solid #b59f5b;
+  cursor: pointer;
+}
+
+.picture-mini a:active {
+  outline: 1px solid #b59f5b;
+  cursor: pointer;
+}

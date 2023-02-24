@@ -1,0 +1,8 @@
+begin
+if   OpenPictureDialog1.Execute then
+begin
+ADOTable1.Edit;
+(ADOTable1.Fields.FieldByName('Фото') As TblobField).LoadFromFile (OpenPictureDialog1.FileName);
+ADOTable1.Post;
+end;
+end;

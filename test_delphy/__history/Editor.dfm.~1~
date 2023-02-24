@@ -1,0 +1,333 @@
+object fEditor: TfEditor
+  Left = 0
+  Top = 0
+  Caption = 'fEditor'
+  ClientHeight = 635
+  ClientWidth = 800
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label17: TLabel
+    Left = 492
+    Top = 584
+    Width = 37
+    Height = 13
+    Caption = 'Label17'
+  end
+  object GroupBox1: TGroupBox
+    Left = 0
+    Top = 0
+    Width = 800
+    Height = 249
+    Align = alTop
+    Caption = #1051#1080#1095#1085#1099#1077' '#1076#1072#1085#1085#1099#1077
+    TabOrder = 0
+    ExplicitTop = -6
+    object Label1: TLabel
+      Left = 32
+      Top = 48
+      Width = 19
+      Height = 13
+      Caption = #1048#1084#1103
+    end
+    object Label2: TLabel
+      Left = 32
+      Top = 21
+      Width = 44
+      Height = 13
+      Caption = #1060#1072#1084#1080#1083#1080#1103
+    end
+    object Label3: TLabel
+      Left = 32
+      Top = 77
+      Width = 49
+      Height = 13
+      Caption = #1054#1090#1095#1077#1089#1090#1074#1086
+    end
+    object Label4: TLabel
+      Left = 32
+      Top = 104
+      Width = 19
+      Height = 13
+      Caption = #1055#1086#1083
+    end
+    object Label5: TLabel
+      Left = 32
+      Top = 136
+      Width = 60
+      Height = 13
+      Caption = #1044#1072#1090#1072' '#1088#1086#1078#1076'.'
+    end
+    object Label6: TLabel
+      Left = 32
+      Top = 168
+      Width = 68
+      Height = 13
+      Caption = #1044#1072#1090#1072' '#1087#1086#1089#1090#1091#1087'.'
+    end
+    object Label7: TLabel
+      Left = 450
+      Top = 104
+      Width = 69
+      Height = 13
+      Caption = #1050#1086#1083'-'#1074#1086' '#1076#1077#1090#1077#1081
+    end
+    object Label8: TLabel
+      Left = 450
+      Top = 131
+      Width = 52
+      Height = 13
+      Caption = #1057#1090#1072#1078', '#1083#1077#1090
+    end
+    object Label9: TLabel
+      Left = 450
+      Top = 168
+      Width = 67
+      Height = 13
+      Caption = #1054#1073#1088#1072#1079#1086#1074#1072#1085#1080#1077
+    end
+    object DBEdit1: TDBEdit
+      Left = 120
+      Top = 18
+      Width = 145
+      Height = 21
+      TabOrder = 0
+    end
+    object DBEdit2: TDBEdit
+      Left = 120
+      Top = 45
+      Width = 145
+      Height = 21
+      TabOrder = 1
+    end
+    object DBEdit3: TDBEdit
+      Left = 544
+      Top = 101
+      Width = 169
+      Height = 21
+      TabOrder = 2
+    end
+    object DBEdit4: TDBEdit
+      Left = 544
+      Top = 133
+      Width = 169
+      Height = 21
+      TabOrder = 3
+    end
+    object DBEdit5: TDBEdit
+      Left = 544
+      Top = 165
+      Width = 169
+      Height = 21
+      TabOrder = 4
+    end
+    object DBEdit6: TDBEdit
+      Left = 120
+      Top = 74
+      Width = 145
+      Height = 21
+      TabOrder = 5
+    end
+    object DBEdit7: TDBEdit
+      Left = 120
+      Top = 128
+      Width = 145
+      Height = 21
+      TabOrder = 6
+    end
+    object DBEdit8: TDBEdit
+      Left = 120
+      Top = 165
+      Width = 145
+      Height = 21
+      TabOrder = 7
+    end
+    object CheckBox1: TCheckBox
+      Left = 488
+      Top = 22
+      Width = 97
+      Height = 17
+      Caption = #1078#1077#1085'\'#1079#1072#1084#1091#1078
+      TabOrder = 8
+    end
+    object CheckBox2: TCheckBox
+      Left = 488
+      Top = 64
+      Width = 97
+      Height = 17
+      Caption = #1074#1086#1077#1085#1085#1086#1086#1073#1103#1079#1072#1085#1085#1099#1081
+      TabOrder = 9
+    end
+    object DBComboBox1: TDBComboBox
+      Left = 120
+      Top = 101
+      Width = 145
+      Height = 21
+      TabOrder = 10
+    end
+  end
+  object GroupBox2: TGroupBox
+    Left = 0
+    Top = 249
+    Width = 800
+    Height = 80
+    Align = alTop
+    Caption = #1044#1086#1083#1078#1085#1086#1089#1090#1100
+    TabOrder = 1
+    ExplicitTop = 200
+    object Label10: TLabel
+      Left = 32
+      Top = 40
+      Width = 37
+      Height = 13
+      Caption = 'Label10'
+    end
+    object Label11: TLabel
+      Left = 568
+      Top = 40
+      Width = 37
+      Height = 13
+      Caption = 'Label11'
+    end
+    object DBEdit9: TDBEdit
+      Left = 96
+      Top = 40
+      Width = 121
+      Height = 21
+      TabOrder = 0
+    end
+    object DBEdit10: TDBEdit
+      Left = 624
+      Top = 40
+      Width = 121
+      Height = 21
+      TabOrder = 1
+    end
+  end
+  object GroupBox3: TGroupBox
+    Left = 0
+    Top = 329
+    Width = 800
+    Height = 112
+    Align = alTop
+    Caption = #1044#1086#1084#1072#1096#1085#1080#1081' '#1072#1076#1088#1077#1089
+    TabOrder = 2
+    ExplicitTop = 267
+    object Label12: TLabel
+      Left = 32
+      Top = 80
+      Width = 37
+      Height = 13
+      Caption = 'Label12'
+    end
+    object Label13: TLabel
+      Left = 32
+      Top = 32
+      Width = 37
+      Height = 13
+      Caption = 'Label13'
+    end
+    object Label14: TLabel
+      Left = 320
+      Top = 32
+      Width = 37
+      Height = 13
+      Caption = 'Label14'
+    end
+    object DBEdit11: TDBEdit
+      Left = 96
+      Top = 24
+      Width = 121
+      Height = 21
+      TabOrder = 0
+    end
+    object DBEdit12: TDBEdit
+      Left = 408
+      Top = 24
+      Width = 121
+      Height = 21
+      TabOrder = 1
+    end
+    object DBEdit13: TDBEdit
+      Left = 96
+      Top = 72
+      Width = 433
+      Height = 21
+      TabOrder = 2
+    end
+  end
+  object GroupBox4: TGroupBox
+    Left = 0
+    Top = 441
+    Width = 800
+    Height = 112
+    Align = alTop
+    Caption = #1058#1077#1083#1077#1092#1086#1085
+    TabOrder = 3
+    object Label15: TLabel
+      Left = 32
+      Top = 32
+      Width = 37
+      Height = 13
+      Caption = 'Label15'
+    end
+    object Label16: TLabel
+      Left = 328
+      Top = 32
+      Width = 37
+      Height = 13
+      Caption = 'Label16'
+    end
+    object DBEdit14: TDBEdit
+      Left = 96
+      Top = 24
+      Width = 121
+      Height = 21
+      TabOrder = 0
+    end
+    object DBComboBox2: TDBComboBox
+      Left = 408
+      Top = 24
+      Width = 145
+      Height = 21
+      TabOrder = 1
+    end
+    object Button1: TButton
+      Left = 624
+      Top = 48
+      Width = 75
+      Height = 25
+      Caption = 'Button1'
+      TabOrder = 2
+    end
+  end
+  object Button2: TButton
+    Left = 48
+    Top = 584
+    Width = 137
+    Height = 25
+    Caption = 'Button2'
+    TabOrder = 4
+  end
+  object Button3: TButton
+    Left = 320
+    Top = 584
+    Width = 129
+    Height = 25
+    Caption = 'Button3'
+    TabOrder = 5
+  end
+  object DBNavigator1: TDBNavigator
+    Left = 552
+    Top = 578
+    Width = 240
+    Height = 25
+    TabOrder = 6
+  end
+end

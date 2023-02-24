@@ -1,0 +1,165 @@
+﻿object fDM: TfDM
+  OldCreateOrder = False
+  Height = 366
+  Width = 375
+  object ADOCon: TADOConnection
+    Connected = True
+    ConnectionString = 
+      'Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\andre\OneD' +
+      'rive\'#1056#1072#1073#1086#1095#1080#1081' '#1089#1090#1086#1083'\test_delphy\ok.mdb;Persist Security Info=False'
+    LoginPrompt = False
+    Mode = cmShareDenyNone
+    Provider = 'Microsoft.Jet.OLEDB.4.0'
+    Left = 24
+    Top = 16
+  end
+  object ADOTab_addres: TADOTable
+    Active = True
+    Connection = ADOCon
+    CursorType = ctStatic
+    IndexFieldNames = #1057#1086#1090#1088#1091#1076#1085#1080#1082
+    MasterFields = #1050#1083#1102#1095
+    MasterSource = DS_data
+    TableName = 'Adres'
+    Left = 24
+    Top = 72
+    object ADOTab_addresСотрудник: TIntegerField
+      FieldName = #1057#1086#1090#1088#1091#1076#1085#1080#1082
+    end
+    object ADOTab_addresСтрана: TWideStringField
+      FieldName = #1057#1090#1088#1072#1085#1072
+      Size = 15
+    end
+    object ADOTab_addresГород: TWideStringField
+      FieldName = #1043#1086#1088#1086#1076
+    end
+    object ADOTab_addresДом_Адрес: TWideStringField
+      FieldName = #1044#1086#1084'_'#1040#1076#1088#1077#1089
+      Size = 100
+    end
+  end
+  object DS_addres: TDataSource
+    DataSet = ADOTab_addres
+    Left = 72
+    Top = 72
+  end
+  object DS_doljnost: TDataSource
+    DataSet = ADOTab_dolojnost
+    Left = 72
+    Top = 136
+  end
+  object DS_data: TDataSource
+    DataSet = ADOTab_data
+    Left = 80
+    Top = 192
+  end
+  object ADOTab_dolojnost: TADOTable
+    Active = True
+    Connection = ADOCon
+    CursorType = ctStatic
+    TableName = 'Doljnost'
+    Left = 24
+    Top = 128
+    object ADOTab_dolojnostСотрудник: TIntegerField
+      FieldName = #1057#1086#1090#1088#1091#1076#1085#1080#1082
+      Visible = False
+    end
+    object ADOTab_dolojnostОтдел: TWideStringField
+      FieldName = #1054#1090#1076#1077#1083
+      Size = 15
+    end
+    object ADOTab_dolojnostДолжность: TWideStringField
+      FieldName = #1044#1086#1083#1078#1085#1086#1089#1090#1100
+    end
+  end
+  object ADOTab_data: TADOTable
+    Active = True
+    Connection = ADOCon
+    CursorType = ctStatic
+    TableName = 'LichData'
+    Left = 24
+    Top = 192
+    object ADOTab_dataКлюч: TAutoIncField
+      FieldName = #1050#1083#1102#1095
+      ReadOnly = True
+      Visible = False
+    end
+    object ADOTab_dataФамилия: TWideStringField
+      DisplayWidth = 13
+      FieldName = #1060#1072#1084#1080#1083#1080#1103
+      Size = 25
+    end
+    object ADOTab_dataИмя: TWideStringField
+      DisplayWidth = 14
+      FieldName = #1048#1084#1103
+      Size = 25
+    end
+    object ADOTab_dataОтчество: TWideStringField
+      DisplayWidth = 25
+      FieldName = #1054#1090#1095#1077#1089#1090#1074#1086
+      Size = 25
+    end
+    object ADOTab_dataПол: TWideStringField
+      DisplayWidth = 3
+      FieldName = #1055#1086#1083
+      Size = 3
+    end
+    object ADOTab_dataСем_Полож: TBooleanField
+      DisplayWidth = 12
+      FieldName = #1057#1077#1084'_'#1055#1086#1083#1086#1078
+      DisplayValues = #1078#1077#1085';'#1093#1086#1083#1086#1089#1090
+    end
+    object ADOTab_dataДетей: TWordField
+      DisplayWidth = 17
+      FieldName = #1044#1077#1090#1077#1081
+    end
+    object ADOTab_dataДата_Рожд: TDateTimeField
+      DisplayWidth = 21
+      FieldName = #1044#1072#1090#1072'_'#1056#1086#1078#1076
+    end
+    object ADOTab_dataДата_Пост: TDateTimeField
+      DisplayWidth = 24
+      FieldName = #1044#1072#1090#1072'_'#1055#1086#1089#1090
+    end
+    object ADOTab_dataСтаж: TWordField
+      DisplayWidth = 10
+      FieldName = #1057#1090#1072#1078
+    end
+    object ADOTab_dataОбразование: TWideStringField
+      DisplayWidth = 13
+      FieldName = #1054#1073#1088#1072#1079#1086#1074#1072#1085#1080#1077
+      Size = 30
+    end
+    object ADOTab_dataВоеннообязанный: TBooleanField
+      DisplayWidth = 15
+      FieldName = #1042#1086#1077#1085#1085#1086#1086#1073#1103#1079#1072#1085#1085#1099#1081
+      DisplayValues = #1076#1072';'#1085#1077#1090
+    end
+  end
+  object DS_telephon: TDataSource
+    DataSet = ADOTab_telephon
+    Left = 104
+    Top = 264
+  end
+  object ADOTab_telephon: TADOTable
+    Active = True
+    Connection = ADOCon
+    CursorType = ctStatic
+    TableName = 'Telephones'
+    Left = 24
+    Top = 264
+    object ADOTab_telephonСотрудник: TIntegerField
+      FieldName = #1057#1086#1090#1088#1091#1076#1085#1080#1082
+      Visible = False
+    end
+    object ADOTab_telephonТелефон: TWideStringField
+      FieldName = #1058#1077#1083#1077#1092#1086#1085
+      EditMask = '!\(999\)000-0000;1;_'
+      Size = 17
+    end
+    object ADOTab_telephonПримечание: TWideStringField
+      FieldName = #1055#1088#1080#1084#1077#1095#1072#1085#1080#1077
+      Size = 10
+    end
+  end
+end

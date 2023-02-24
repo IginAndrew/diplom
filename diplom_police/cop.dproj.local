@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.880,C:\Users\andre\YandexDisk\Andrew\дипломы_для_работы\diplom_police\Unit2.pas=C:\Users\andre\YandexDisk\Andrew\дипломы_для_работы\diplom_police\glavn.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.525,=C:\Users\andre\YandexDisk\Andrew\дипломы_для_работы\diplom_police\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.855,C:\Users\andre\YandexDisk\Andrew\дипломы_для_работы\diplom_police\Unit1.pas=C:\Users\andre\YandexDisk\Andrew\дипломы_для_работы\diplom_police\DM.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.539,C:\Users\andre\OneDrive\Документы\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\andre\YandexDisk\Andrew\дипломы_для_работы\diplom_police\main.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.953,=C:\Users\andre\OneDrive\Документы\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.123,=C:\Users\andre\OneDrive\Документы\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.420,C:\Users\andre\OneDrive\Документы\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\andre\YandexDisk\Andrew\дипломы_для_работы\diplom_police\cop.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.880,C:\Users\andre\YandexDisk\Andrew\дипломы_для_работы\diplom_police\Unit2.dfm=C:\Users\andre\YandexDisk\Andrew\дипломы_для_работы\diplom_police\glavn.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.539,C:\Users\andre\OneDrive\Документы\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\andre\YandexDisk\Andrew\дипломы_для_работы\diplom_police\main.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.806,=C:\Users\andre\YandexDisk\Andrew\дипломы_для_работы\diplom_police\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.639,C:\Users\andre\YandexDisk\Andrew\дипломы_для_работы\diplom_police\cop.dproj=C:\Users\andre\YandexDisk\Andrew\дипломы_для_работы\diplom_police\cop.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.855,C:\Users\andre\YandexDisk\Andrew\дипломы_для_работы\diplom_police\Unit1.dfm=C:\Users\andre\YandexDisk\Andrew\дипломы_для_работы\diplom_police\DM.dfm</Transaction>
+  </Transactions>
+</BorlandProject>

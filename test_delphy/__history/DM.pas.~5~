@@ -1,0 +1,56 @@
+unit DM;
+
+interface
+
+uses
+  System.SysUtils, System.Classes, Data.DB, Data.Win.ADODB;
+
+type
+  TfDM = class(TDataModule)
+    ADOCon: TADOConnection;
+    ADOTab_addres: TADOTable;
+    DS_addres: TDataSource;
+    DS_doljnost: TDataSource;
+    DS_data: TDataSource;
+    ADOTab_dolojnost: TADOTable;
+    ADOTab_data: TADOTable;
+    DS_telephon: TDataSource;
+    ADOTab_telephon: TADOTable;
+    ADOTab_addresСотрудник: TIntegerField;
+    ADOTab_addresСтрана: TWideStringField;
+    ADOTab_addresГород: TWideStringField;
+    ADOTab_addresДом_Адрес: TWideStringField;
+    ADOTab_dolojnostСотрудник: TIntegerField;
+    ADOTab_dolojnostОтдел: TWideStringField;
+    ADOTab_dolojnostДолжность: TWideStringField;
+    ADOTab_dataКлюч: TAutoIncField;
+    ADOTab_dataФамилия: TWideStringField;
+    ADOTab_dataИмя: TWideStringField;
+    ADOTab_dataОтчество: TWideStringField;
+    ADOTab_dataПол: TWideStringField;
+    ADOTab_dataСем_Полож: TBooleanField;
+    ADOTab_dataДетей: TWordField;
+    ADOTab_dataДата_Рожд: TDateTimeField;
+    ADOTab_dataДата_Пост: TDateTimeField;
+    ADOTab_dataСтаж: TWordField;
+    ADOTab_dataОбразование: TWideStringField;
+    ADOTab_dataВоеннообязанный: TBooleanField;
+    ADOTab_telephonСотрудник: TIntegerField;
+    ADOTab_telephonТелефон: TWideStringField;
+    ADOTab_telephonПримечание: TWideStringField;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  fDM: TfDM;
+
+implementation
+
+{%CLASSGROUP 'Vcl.Controls.TControl'}
+
+{$R *.dfm}
+
+end.

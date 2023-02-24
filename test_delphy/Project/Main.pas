@@ -1,0 +1,95 @@
+unit Main;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, Grids, DBGrids, StdCtrls, ExtCtrls;
+
+type
+  TfName = class(TForm)
+    Panel1: TPanel;
+    Panel2: TPanel;
+    Panel3: TPanel;
+    Splitter1: TSplitter;
+    RadioButton1: TRadioButton;
+    RadioButton2: TRadioButton;
+    RadioButton3: TRadioButton;
+    Bevel1: TBevel;
+    Label1: TLabel;
+    Edit1: TEdit;
+    Button1: TButton;
+    Button2: TButton;
+    Button3: TButton;
+    Bevel2: TBevel;
+    DBGrid1: TDBGrid;
+    DBGrid2: TDBGrid;
+    procedure Button3Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
+    procedure DBGrid1DblClick(Sender: TObject);
+    procedure RadioButton1Click(Sender: TObject);
+    procedure RadioButton2Click(Sender: TObject);
+    procedure RadioButton3Click(Sender: TObject);
+    procedure Edit1Change(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  fName: TfName;
+
+implementation
+
+uses DM, Editor;
+
+{$R *.dfm}
+
+procedure TfName.Button3Click(Sender: TObject);
+begin
+  fDM.TLichData.Append;
+  fDM.TDoljnost.Append;
+  fDM.TAdres.Append;
+  fDM.TTelephones.Append;
+  fEditor.ShowModal;
+
+end;
+
+procedure TfName.Button2Click(Sender: TObject);
+begin
+feditor.showmodal;
+end;
+
+procedure TfName.DBGrid1DblClick(Sender: TObject);
+begin
+feditor.showmodal;
+end;
+
+procedure TfName.RadioButton1Click(Sender: TObject);
+begin
+if RadioButton1.Checked then
+DBGrid2.DataSource := fDM.DSAdres;
+
+end;
+
+procedure TfName.RadioButton2Click(Sender: TObject);
+begin
+  if RadioButton2.Checked then
+    DBGrid2.DataSource := fDM.DSTelephones;
+
+end;
+
+procedure TfName.RadioButton3Click(Sender: TObject);
+begin
+if RadioButton3.Checked then
+    DBGrid2.DataSource := fDM.DSDoljnost;
+
+end;
+
+procedure TfName.Edit1Change(Sender: TObject);
+begin
+ fDm.MyLocate(Edit1.Text);
+end;
+
+end.

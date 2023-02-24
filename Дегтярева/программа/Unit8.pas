@@ -1,0 +1,45 @@
+unit Unit8;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, Grids, DBGrids, DB, ADODB;
+
+type
+  TForm8 = class(TForm)
+    MeSQL: TMemo;
+    Button1: TButton;
+    DBGrid1: TDBGrid;
+    Label1: TLabel;
+    Label2: TLabel;
+    procedure Button1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form8: TForm8;
+
+implementation
+
+uses Unit1, Unit2, Unit3, Unit4, Unit5, Unit6, Unit7, Unit9;
+
+{$R *.dfm}
+
+procedure TForm8.Button1Click(Sender: TObject);
+begin
+ With DataModule2.ADOQuery1 do
+  try
+   Active:= false; // закрыть запрос
+   SQL.Assign(MeSQL.Lines); // передать запрос из MeSQL в ADOQuery1
+   Active:= true; // выполнить и открыть запрос
+  except // в случае ошибки
+   on e:Exception do
+    ShowMessage('Не удалось выполнить запрос.');
+  end;
+end;
+
+end.

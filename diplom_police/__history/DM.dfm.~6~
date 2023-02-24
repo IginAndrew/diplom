@@ -1,0 +1,29 @@
+object DataModule1: TDataModule1
+  OldCreateOrder = False
+  Height = 336
+  Width = 588
+  object ADOCon: TADOConnection
+    Connected = True
+    ConnectionString = 
+      'Provider=Microsoft.Jet.OLEDB.4.0;Data Source='#1087#1086#1083#1080#1094#1080#1103'2000.mdb;Per' +
+      'sist Security Info=False'
+    LoginPrompt = False
+    Mode = cmShareDenyNone
+    Provider = 'Microsoft.Jet.OLEDB.4.0'
+    Left = 80
+    Top = 48
+  end
+  object ADOTab_sotrudnik: TADOTable
+    Active = True
+    Connection = ADOCon
+    CursorType = ctStatic
+    TableName = #1057#1086#1090#1088#1091#1076#1085#1080#1082
+    Left = 80
+    Top = 136
+  end
+  object DS_sotrudnik: TDataSource
+    DataSet = ADOTab_sotrudnik
+    Left = 184
+    Top = 144
+  end
+end

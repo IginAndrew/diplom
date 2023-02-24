@@ -1,0 +1,509 @@
+object fDM: TfDM
+  OldCreateOrder = False
+  Left = 201
+  Top = 136
+  Height = 584
+  Width = 300
+  object ADOCon: TADOConnection
+    Connected = True
+    ConnectionString = 
+      'Provider=Microsoft.Jet.OLEDB.4.0;Data Source='#1087#1086#1083#1080#1094#1080#1103'2000.mdb;Per' +
+      'sist Security Info=False'
+    LoginPrompt = False
+    Mode = cmShareDenyNone
+    Provider = 'Microsoft.Jet.OLEDB.4.0'
+    Left = 32
+    Top = 24
+  end
+  object ADOTab_sotr: TADOTable
+    Active = True
+    Connection = ADOCon
+    CursorType = ctStatic
+    IndexFieldNames = #1050#1086#1076#1057#1086#1090#1088#1091#1076#1085#1080#1082#1072
+    MasterFields = #1050#1086#1076#1057#1086#1090#1088#1091#1076#1085#1080#1082#1072
+    MasterSource = DS_prestup
+    TableName = #1057#1086#1090#1088#1091#1076#1085#1080#1082
+    Left = 32
+    Top = 80
+    object ADOTab_sotrDSDesigner: TAutoIncField
+      FieldName = #1050#1086#1076#1057#1086#1090#1088#1091#1076#1085#1080#1082#1072
+      Visible = False
+    end
+    object ADOTab_sotrDSDesigner2: TWideStringField
+      DisplayWidth = 22
+      FieldName = #1047#1074#1072#1085#1080#1077
+    end
+    object ADOTab_sotrDSDesigner3: TWideStringField
+      DisplayWidth = 23
+      FieldName = #1060#1048#1054
+      Size = 30
+    end
+    object ADOTab_sotrDSDesigner4: TIntegerField
+      DisplayWidth = 15
+      FieldName = #1042#1086#1079#1088#1072#1089#1090
+    end
+    object ADOTab_sotrDSDesigner5: TBooleanField
+      DisplayWidth = 11
+      FieldName = #1055#1086#1083
+      DisplayValues = #1084';'#1078
+    end
+    object ADOTab_sotrDSDesigner6: TWideStringField
+      DisplayWidth = 24
+      FieldName = #1040#1076#1088#1077#1089
+      Size = 50
+    end
+    object ADOTab_sotrDSDesigner7: TWideStringField
+      DisplayWidth = 24
+      FieldName = #1058#1077#1083#1077#1092#1086#1085
+      Size = 17
+    end
+    object ADOTab_sotrDSDesigner8: TWideStringField
+      DisplayWidth = 25
+      FieldName = #1055#1072#1089#1087#1086#1088#1090#1085#1099#1077#1044#1072#1085#1085#1099#1077
+      Size = 10
+    end
+    object ADOTab_sotrDSDesigner9: TBlobField
+      DisplayWidth = 15
+      FieldName = #1060#1086#1090#1086
+    end
+  end
+  object DS_sotrud: TDataSource
+    DataSet = ADOTab_sotr
+    Left = 88
+    Top = 80
+  end
+  object DS_prestup: TDataSource
+    DataSet = ADOTab_prestup
+    Left = 88
+    Top = 160
+  end
+  object DS_posrt: TDataSource
+    DataSet = ADOTab_postr
+    Left = 104
+    Top = 232
+  end
+  object DS_dolg: TDataSource
+    DataSet = ADOTab_dolg
+    Left = 104
+    Top = 296
+  end
+  object DS_time: TDataSource
+    DataSet = ADOTab_time
+    Left = 112
+    Top = 368
+  end
+  object DS_vid: TDataSource
+    DataSet = ADOTab_vid
+    Left = 128
+    Top = 448
+  end
+  object ADOTab_prestup: TADOTable
+    Active = True
+    Connection = ADOCon
+    CursorType = ctStatic
+    IndexFieldNames = #1050#1086#1076#1055#1088#1077#1089#1090#1091#1087#1085#1080#1082#1072
+    TableName = #1055#1088#1077#1089#1090#1091#1087#1085#1080#1082
+    Left = 32
+    Top = 168
+    object ADOTab_prestupDSDesigner: TAutoIncField
+      FieldName = #1050#1086#1076#1055#1088#1077#1089#1090#1091#1087#1085#1080#1082#1072
+      Visible = False
+    end
+    object ADOTab_prestupDSDesigner2: TIntegerField
+      FieldName = #1050#1086#1076#1057#1086#1090#1088#1091#1076#1085#1080#1082#1072
+      Visible = False
+    end
+    object ADOTab_prestupDSDesigner3: TIntegerField
+      DisplayWidth = 15
+      FieldName = #1053#1086#1084#1077#1088#1044#1077#1083#1072
+    end
+    object ADOTab_prestupDSDesigner4: TWideStringField
+      DisplayWidth = 21
+      FieldName = #1060#1048#1054
+      Size = 30
+    end
+    object ADOTab_prestupDSDesigner5: TDateTimeField
+      DisplayWidth = 27
+      FieldName = #1044#1072#1090#1072#1056#1086#1078#1076#1077#1085#1080#1103
+    end
+    object ADOTab_prestupDSDesigner6: TBooleanField
+      DisplayWidth = 12
+      FieldName = #1055#1086#1083
+      DisplayValues = #1084';'#1078
+    end
+    object ADOTab_prestupDSDesigner7: TWideStringField
+      DisplayWidth = 27
+      FieldName = #1040#1076#1088#1077#1089
+      Size = 50
+    end
+    object ADOTab_prestupDSDesigner9: TWideStringField
+      DisplayWidth = 24
+      FieldName = #1058#1077#1083#1077#1092#1086#1085
+      Size = 255
+    end
+    object ADOTab_prestupDSDesigner8: TWideStringField
+      DisplayWidth = 29
+      FieldName = #1055#1088#1080#1084#1077#1095#1072#1085#1080#1077
+      Size = 100
+    end
+  end
+  object ADOTab_postr: TADOTable
+    Active = True
+    Connection = ADOCon
+    CursorType = ctStatic
+    IndexFieldNames = #1050#1086#1076#1055#1086#1089#1090#1088#1086#1076#1072#1074#1096#1077#1075#1086
+    MasterFields = #1050#1086#1076#1055#1086#1089#1090#1088#1072#1076#1072#1074#1096#1077#1075#1086
+    MasterSource = DS_time
+    TableName = #1055#1086#1089#1090#1088#1072#1076#1072#1074#1096#1080#1077
+    Left = 32
+    Top = 248
+    object ADOTab_postrDSDesigner: TAutoIncField
+      FieldName = #1050#1086#1076#1055#1086#1089#1090#1088#1086#1076#1072#1074#1096#1077#1075#1086
+      Visible = False
+    end
+    object ADOTab_postrDSDesigner2: TWideStringField
+      DisplayWidth = 36
+      FieldName = #1060#1048#1054
+      Size = 30
+    end
+    object ADOTab_postrDSDesigner3: TDateTimeField
+      DisplayWidth = 25
+      FieldName = #1044#1072#1090#1072' '#1088#1086#1078#1076#1077#1085#1080#1103
+    end
+    object ADOTab_postrDSDesigner4: TBooleanField
+      DisplayWidth = 10
+      FieldName = #1055#1086#1083
+      DisplayValues = #1084';'#1078
+    end
+    object ADOTab_postrDSDesigner5: TWideStringField
+      DisplayWidth = 41
+      FieldName = #1040#1076#1088#1077#1089
+      Size = 150
+    end
+    object ADOTab_postrDSDesigner6: TWideStringField
+      DisplayWidth = 50
+      FieldName = #1058#1077#1083#1077#1092#1086#1085
+      Size = 255
+    end
+  end
+  object ADOTab_dolg: TADOTable
+    Active = True
+    Connection = ADOCon
+    CursorType = ctStatic
+    IndexFieldNames = #1050#1086#1076#1057#1086#1090#1088#1091#1076#1085#1080#1082#1072
+    MasterFields = #1050#1086#1076#1057#1086#1090#1088#1091#1076#1085#1080#1082#1072
+    MasterSource = DS_sotrud
+    TableName = #1044#1086#1083#1078#1085#1086#1089#1090#1100
+    Left = 40
+    Top = 312
+    object ADOTab_dolgDSDesigner: TIntegerField
+      FieldName = #1050#1086#1076#1057#1086#1090#1088#1091#1076#1085#1080#1082#1072
+      Visible = False
+    end
+    object ADOTab_dolgDSDesigner2: TWideStringField
+      DisplayWidth = 29
+      FieldName = #1044#1086#1083#1078#1085#1086#1089#1090#1100
+    end
+    object ADOTab_dolgDSDesigner3: TBCDField
+      DisplayWidth = 22
+      FieldName = #1054#1082#1083#1072#1076
+      Precision = 19
+    end
+    object ADOTab_dolgDSDesigner4: TWideStringField
+      DisplayWidth = 33
+      FieldName = #1054#1073#1103#1079#1072#1085#1085#1086#1089#1090#1080
+      Size = 255
+    end
+    object ADOTab_dolgDSDesigner5: TWideStringField
+      DisplayWidth = 22
+      FieldName = #1058#1088#1077#1073#1086#1074#1072#1085#1080#1103
+      Size = 255
+    end
+    object ADOTab_dolgDSDesigner6: TWideStringField
+      DisplayWidth = 55
+      FieldName = #1055#1088#1080#1084#1077#1095#1072#1085#1080#1077
+      Size = 100
+    end
+  end
+  object ADOTab_time: TADOTable
+    Active = True
+    Connection = ADOCon
+    CursorType = ctStatic
+    IndexFieldNames = #1050#1086#1076#1055#1088#1077#1089#1090#1091#1087#1085#1080#1082#1072
+    MasterFields = #1050#1086#1076#1055#1088#1077#1089#1090#1091#1087#1085#1080#1082#1072
+    MasterSource = DS_prestup
+    TableName = #1042#1088#1077#1084#1103#1052#1077#1089#1090#1086
+    Left = 56
+    Top = 384
+    object ADOTab_timeDSDesigner: TAutoIncField
+      FieldName = #1050#1086#1076
+      Visible = False
+    end
+    object ADOTab_timeDSDesigner2: TDateTimeField
+      FieldName = #1042#1088#1077#1084#1103#1055#1088#1077#1089#1090#1091#1087#1083#1077#1085#1080#1103
+    end
+    object ADOTab_timeDSDesigner3: TWideStringField
+      FieldName = #1052#1077#1089#1090#1086#1055#1088#1077#1089#1090#1091#1087#1083#1077#1085#1080#1103
+      Size = 50
+    end
+    object ADOTab_timeDSDesigner4: TIntegerField
+      FieldName = #1050#1086#1076#1055#1088#1077#1089#1090#1091#1087#1085#1080#1082#1072
+      Visible = False
+    end
+    object ADOTab_timeDSDesigner5: TIntegerField
+      FieldName = #1050#1086#1076#1042#1080#1076#1072#1055#1088#1077#1089#1090#1091#1087#1083#1077#1085#1080#1103
+      Visible = False
+    end
+    object ADOTab_timeDSDesigner6: TIntegerField
+      FieldName = #1050#1086#1076#1055#1086#1089#1090#1088#1072#1076#1072#1074#1096#1077#1075#1086
+      Visible = False
+    end
+  end
+  object ADOTab_vid: TADOTable
+    Active = True
+    Connection = ADOCon
+    CursorType = ctStatic
+    IndexFieldNames = #1050#1086#1076#1042#1080#1076#1072#1055#1088#1077#1089#1090#1091#1087#1083#1077#1085#1080#1103
+    MasterFields = #1050#1086#1076#1042#1080#1076#1072#1055#1088#1077#1089#1090#1091#1087#1083#1077#1085#1080#1103
+    MasterSource = DS_time
+    TableName = #1042#1080#1076#1055#1088#1077#1089#1090#1091#1087#1083#1077#1085#1080#1103
+    Left = 48
+    Top = 456
+    object ADOTab_vidDSDesigner: TAutoIncField
+      FieldName = #1050#1086#1076#1042#1080#1076#1072#1055#1088#1077#1089#1090#1091#1087#1083#1077#1085#1080#1103
+      Visible = False
+    end
+    object ADOTab_vidDSDesigner2: TWideStringField
+      DisplayWidth = 24
+      FieldName = #1053#1072#1080#1084#1077#1085#1086#1074#1072#1085#1080#1077
+      Size = 150
+    end
+    object ADOTab_vidDSDesigner3: TWideStringField
+      DisplayWidth = 12
+      FieldName = #1057#1090#1072#1090#1100#1103
+      Size = 10
+    end
+    object ADOTab_vidDSDesigner4: TWideStringField
+      DisplayWidth = 24
+      FieldName = #1053#1072#1082#1072#1079#1072#1085#1080#1077
+      Size = 150
+    end
+    object ADOTab_vidDSDesigner5: TWideStringField
+      DisplayWidth = 30
+      FieldName = #1057#1088#1086#1082
+    end
+    object ADOTab_vidDSDesigner6: TWideStringField
+      DisplayWidth = 80
+      FieldName = #1055#1088#1080#1084#1077#1095#1072#1085#1080#1077
+      Size = 100
+    end
+  end
+  object ADOQuery_sotr: TADOQuery
+    Active = True
+    Connection = ADOCon
+    CursorType = ctStatic
+    Parameters = <>
+    SQL.Strings = (
+      
+        'SELECT '#1057#1086#1090#1088#1091#1076#1085#1080#1082'.'#1060#1048#1054', '#1057#1086#1090#1088#1091#1076#1085#1080#1082'.'#1042#1086#1079#1088#1072#1089#1090', '#1057#1086#1090#1088#1091#1076#1085#1080#1082'.'#1055#1086#1083', '#1057#1086#1090#1088#1091#1076#1085#1080 +
+        #1082'.'#1040#1076#1088#1077#1089', '#1057#1086#1090#1088#1091#1076#1085#1080#1082'.'#1058#1077#1083#1077#1092#1086#1085', '#1057#1086#1090#1088#1091#1076#1085#1080#1082'.'#1055#1072#1089#1087#1086#1088#1090#1085#1099#1077#1044#1072#1085#1085#1099#1077', '#1057#1086#1090#1088#1091#1076#1085#1080 +
+        #1082'.'#1060#1086#1090#1086
+      'FROM '#1057#1086#1090#1088#1091#1076#1085#1080#1082';')
+    Left = 136
+    Top = 88
+    object ADOQuery_sotrDSDesigner: TWideStringField
+      FieldName = #1060#1048#1054
+      Size = 30
+    end
+    object ADOQuery_sotrDSDesigner2: TIntegerField
+      FieldName = #1042#1086#1079#1088#1072#1089#1090
+    end
+    object ADOQuery_sotrDSDesigner3: TBooleanField
+      FieldName = #1055#1086#1083
+      DisplayValues = #1084';'#1078
+    end
+    object ADOQuery_sotrDSDesigner4: TWideStringField
+      FieldName = #1040#1076#1088#1077#1089
+      Size = 50
+    end
+    object ADOQuery_sotrDSDesigner5: TWideStringField
+      FieldName = #1058#1077#1083#1077#1092#1086#1085
+      Size = 17
+    end
+    object ADOQuery_sotrDSDesigner6: TWideStringField
+      FieldName = #1055#1072#1089#1087#1086#1088#1090#1085#1099#1077#1044#1072#1085#1085#1099#1077
+      Size = 10
+    end
+    object ADOQuery_sotrDSDesigner7: TBlobField
+      FieldName = #1060#1086#1090#1086
+    end
+  end
+  object DSQ_sotr: TDataSource
+    DataSet = ADOQuery_sotr
+    Left = 176
+    Top = 88
+  end
+  object ADOQ_prestup: TADOQuery
+    Active = True
+    Connection = ADOCon
+    CursorType = ctStatic
+    Parameters = <>
+    SQL.Strings = (
+      
+        'SELECT '#1055#1088#1077#1089#1090#1091#1087#1085#1080#1082'.'#1060#1048#1054', '#1055#1088#1077#1089#1090#1091#1087#1085#1080#1082'.'#1044#1072#1090#1072#1056#1086#1078#1076#1077#1085#1080#1103', '#1055#1088#1077#1089#1090#1091#1087#1085#1080#1082'.'#1055#1086#1083', ' +
+        #1055#1088#1077#1089#1090#1091#1087#1085#1080#1082'.'#1040#1076#1088#1077#1089', '#1055#1088#1077#1089#1090#1091#1087#1085#1080#1082'.'#1058#1077#1083#1077#1092#1086#1085', '#1055#1088#1077#1089#1090#1091#1087#1085#1080#1082'.'#1055#1088#1080#1084#1077#1095#1072#1085#1080#1077', '#1055#1088#1077 +
+        #1089#1090#1091#1087#1085#1080#1082'.'#1053#1086#1084#1077#1088#1044#1077#1083#1072
+      'FROM '#1055#1088#1077#1089#1090#1091#1087#1085#1080#1082';')
+    Left = 144
+    Top = 176
+    object ADOQ_prestupDSDesigner: TWideStringField
+      FieldName = #1060#1048#1054
+      Size = 30
+    end
+    object ADOQ_prestupDSDesigner2: TDateTimeField
+      FieldName = #1044#1072#1090#1072#1056#1086#1078#1076#1077#1085#1080#1103
+    end
+    object ADOQ_prestupDSDesigner3: TBooleanField
+      FieldName = #1055#1086#1083
+      DisplayValues = #1084';'#1078
+    end
+    object ADOQ_prestupDSDesigner4: TWideStringField
+      DisplayWidth = 30
+      FieldName = #1040#1076#1088#1077#1089
+      Size = 50
+    end
+    object ADOQ_prestupDSDesigner5: TWideStringField
+      DisplayWidth = 15
+      FieldName = #1058#1077#1083#1077#1092#1086#1085
+      Size = 255
+    end
+    object ADOQ_prestupDSDesigner6: TWideStringField
+      DisplayWidth = 30
+      FieldName = #1055#1088#1080#1084#1077#1095#1072#1085#1080#1077
+      Size = 100
+    end
+    object ADOQ_prestupDSDesigner7: TIntegerField
+      FieldName = #1053#1086#1084#1077#1088#1044#1077#1083#1072
+    end
+  end
+  object ADOQ_poterp: TADOQuery
+    Active = True
+    Connection = ADOCon
+    CursorType = ctStatic
+    Parameters = <>
+    SQL.Strings = (
+      
+        'SELECT '#1055#1086#1089#1090#1088#1072#1076#1072#1074#1096#1080#1077'.'#1060#1048#1054', '#1055#1086#1089#1090#1088#1072#1076#1072#1074#1096#1080#1077'.['#1044#1072#1090#1072' '#1088#1086#1078#1076#1077#1085#1080#1103'], '#1055#1086#1089#1090#1088#1072#1076#1072#1074 +
+        #1096#1080#1077'.'#1055#1086#1083', '#1055#1086#1089#1090#1088#1072#1076#1072#1074#1096#1080#1077'.'#1040#1076#1088#1077#1089', '#1055#1086#1089#1090#1088#1072#1076#1072#1074#1096#1080#1077'.'#1058#1077#1083#1077#1092#1086#1085', '#1055#1088#1077#1089#1090#1091#1087#1085#1080#1082'.'#1060#1048 +
+        #1054
+      
+        'FROM '#1055#1088#1077#1089#1090#1091#1087#1085#1080#1082' INNER JOIN ('#1055#1086#1089#1090#1088#1072#1076#1072#1074#1096#1080#1077' INNER JOIN '#1042#1088#1077#1084#1103#1052#1077#1089#1090#1086' O' +
+        'N '#1055#1086#1089#1090#1088#1072#1076#1072#1074#1096#1080#1077'.'#1050#1086#1076#1055#1086#1089#1090#1088#1086#1076#1072#1074#1096#1077#1075#1086' = '#1042#1088#1077#1084#1103#1052#1077#1089#1090#1086'.'#1050#1086#1076#1055#1086#1089#1090#1088#1072#1076#1072#1074#1096#1077#1075#1086') O' +
+        'N '#1055#1088#1077#1089#1090#1091#1087#1085#1080#1082'.'#1050#1086#1076#1055#1088#1077#1089#1090#1091#1087#1085#1080#1082#1072' = '#1042#1088#1077#1084#1103#1052#1077#1089#1090#1086'.'#1050#1086#1076#1055#1088#1077#1089#1090#1091#1087#1085#1080#1082#1072';')
+    Left = 160
+    Top = 248
+    object ADOQ_poterpDSDesigner: TWideStringField
+      FieldName = #1055#1086#1089#1090#1088#1072#1076#1072#1074#1096#1080#1077'.'#1060#1048#1054
+      Size = 30
+    end
+    object ADOQ_poterpDSDesigner2: TDateTimeField
+      FieldName = #1044#1072#1090#1072' '#1088#1086#1078#1076#1077#1085#1080#1103
+    end
+    object ADOQ_poterpDSDesigner3: TBooleanField
+      FieldName = #1055#1086#1083
+      Visible = False
+      DisplayValues = #1078';'#1084
+    end
+    object ADOQ_poterpDSDesigner4: TWideStringField
+      DisplayWidth = 30
+      FieldName = #1040#1076#1088#1077#1089
+      Size = 150
+    end
+    object ADOQ_poterpDSDesigner5: TWideStringField
+      DisplayWidth = 15
+      FieldName = #1058#1077#1083#1077#1092#1086#1085
+      Size = 255
+    end
+    object ADOQ_poterpDSDesigner6: TWideStringField
+      FieldName = #1055#1088#1077#1089#1090#1091#1087#1085#1080#1082'.'#1060#1048#1054
+      Size = 30
+    end
+  end
+  object DSQ_prestup: TDataSource
+    DataSet = ADOQ_prestup
+    Left = 200
+    Top = 176
+  end
+  object DSQ_poterp: TDataSource
+    DataSet = ADOQ_poterp
+    Left = 208
+    Top = 240
+  end
+  object ADOQ_obsh: TADOQuery
+    Active = True
+    Connection = ADOCon
+    CursorType = ctStatic
+    Parameters = <>
+    SQL.Strings = (
+      
+        'SELECT '#1057#1086#1090#1088#1091#1076#1085#1080#1082'.'#1060#1048#1054', '#1057#1086#1090#1088#1091#1076#1085#1080#1082'.'#1047#1074#1072#1085#1080#1077', '#1055#1088#1077#1089#1090#1091#1087#1085#1080#1082'.'#1053#1086#1084#1077#1088#1044#1077#1083#1072', '#1055#1088 +
+        #1077#1089#1090#1091#1087#1085#1080#1082'.'#1060#1048#1054', '#1055#1086#1089#1090#1088#1072#1076#1072#1074#1096#1080#1077'.'#1060#1048#1054', '#1042#1088#1077#1084#1103#1052#1077#1089#1090#1086'.'#1042#1088#1077#1084#1103#1055#1088#1077#1089#1090#1091#1087#1083#1077#1085#1080#1103', '#1042#1088 +
+        #1077#1084#1103#1052#1077#1089#1090#1086'.'#1052#1077#1089#1090#1086#1055#1088#1077#1089#1090#1091#1087#1083#1077#1085#1080#1103', '#1042#1080#1076#1055#1088#1077#1089#1090#1091#1087#1083#1077#1085#1080#1103'.'#1053#1072#1080#1084#1077#1085#1086#1074#1072#1085#1080#1077', '#1042#1080#1076#1055#1088#1077 +
+        #1089#1090#1091#1087#1083#1077#1085#1080#1103'.'#1057#1090#1072#1090#1100#1103
+      
+        'FROM ('#1057#1086#1090#1088#1091#1076#1085#1080#1082' INNER JOIN '#1044#1086#1083#1078#1085#1086#1089#1090#1100' ON '#1057#1086#1090#1088#1091#1076#1085#1080#1082'.'#1050#1086#1076#1057#1086#1090#1088#1091#1076#1085#1080#1082#1072' ' +
+        '= '#1044#1086#1083#1078#1085#1086#1089#1090#1100'.'#1050#1086#1076#1057#1086#1090#1088#1091#1076#1085#1080#1082#1072') INNER JOIN ('#1055#1088#1077#1089#1090#1091#1087#1085#1080#1082' INNER JOIN ('#1055#1086 +
+        #1089#1090#1088#1072#1076#1072#1074#1096#1080#1077' INNER JOIN ('#1042#1080#1076#1055#1088#1077#1089#1090#1091#1087#1083#1077#1085#1080#1103' INNER JOIN '#1042#1088#1077#1084#1103#1052#1077#1089#1090#1086' ON ' +
+        #1042#1080#1076#1055#1088#1077#1089#1090#1091#1087#1083#1077#1085#1080#1103'.'#1050#1086#1076#1042#1080#1076#1072#1055#1088#1077#1089#1090#1091#1087#1083#1077#1085#1080#1103' = '#1042#1088#1077#1084#1103#1052#1077#1089#1090#1086'.'#1050#1086#1076#1042#1080#1076#1072#1055#1088#1077#1089#1090#1091#1087#1083 +
+        #1077#1085#1080#1103') ON '#1055#1086#1089#1090#1088#1072#1076#1072#1074#1096#1080#1077'.'#1050#1086#1076#1055#1086#1089#1090#1088#1086#1076#1072#1074#1096#1077#1075#1086' = '#1042#1088#1077#1084#1103#1052#1077#1089#1090#1086'.'#1050#1086#1076#1055#1086#1089#1090#1088#1072#1076#1072#1074 +
+        #1096#1077#1075#1086') ON '#1055#1088#1077#1089#1090#1091#1087#1085#1080#1082'.'#1050#1086#1076#1055#1088#1077#1089#1090#1091#1087#1085#1080#1082#1072' = '#1042#1088#1077#1084#1103#1052#1077#1089#1090#1086'.'#1050#1086#1076#1055#1088#1077#1089#1090#1091#1087#1085#1080#1082#1072') ' +
+        'ON '#1057#1086#1090#1088#1091#1076#1085#1080#1082'.'#1050#1086#1076#1057#1086#1090#1088#1091#1076#1085#1080#1082#1072' = '#1055#1088#1077#1089#1090#1091#1087#1085#1080#1082'.'#1050#1086#1076#1057#1086#1090#1088#1091#1076#1085#1080#1082#1072';')
+    Left = 176
+    Top = 320
+    object ADOQ_obshDSDesigner: TWideStringField
+      DisplayWidth = 20
+      FieldName = #1057#1086#1090#1088#1091#1076#1085#1080#1082'.'#1060#1048#1054
+      Size = 30
+    end
+    object ADOQ_obshDSDesigner2: TWideStringField
+      DisplayWidth = 10
+      FieldName = #1047#1074#1072#1085#1080#1077
+    end
+    object ADOQ_obshDSDesigner3: TIntegerField
+      FieldName = #1053#1086#1084#1077#1088#1044#1077#1083#1072
+    end
+    object ADOQ_obshDSDesigner4: TWideStringField
+      DisplayWidth = 20
+      FieldName = #1055#1088#1077#1089#1090#1091#1087#1085#1080#1082'.'#1060#1048#1054
+      Size = 30
+    end
+    object ADOQ_obshDSDesigner5: TWideStringField
+      DisplayWidth = 20
+      FieldName = #1055#1086#1089#1090#1088#1072#1076#1072#1074#1096#1080#1077'.'#1060#1048#1054
+      Size = 30
+    end
+    object ADOQ_obshDSDesigner6: TDateTimeField
+      DisplayWidth = 15
+      FieldName = #1042#1088#1077#1084#1103#1055#1088#1077#1089#1090#1091#1087#1083#1077#1085#1080#1103
+    end
+    object ADOQ_obshDSDesigner7: TWideStringField
+      DisplayWidth = 20
+      FieldName = #1052#1077#1089#1090#1086#1055#1088#1077#1089#1090#1091#1087#1083#1077#1085#1080#1103
+      Size = 50
+    end
+    object ADOQ_obshDSDesigner8: TWideStringField
+      DisplayWidth = 20
+      FieldName = #1053#1072#1080#1084#1077#1085#1086#1074#1072#1085#1080#1077
+      Size = 150
+    end
+    object ADOQ_obshDSDesigner9: TWideStringField
+      FieldName = #1057#1090#1072#1090#1100#1103
+      Size = 10
+    end
+  end
+  object DSQ_obsh: TDataSource
+    DataSet = ADOQ_obsh
+    Left = 232
+    Top = 312
+  end
+end

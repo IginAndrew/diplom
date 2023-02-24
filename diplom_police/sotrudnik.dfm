@@ -1,0 +1,289 @@
+object F_sotrudnik: TF_sotrudnik
+  Left = 321
+  Top = 243
+  Width = 870
+  Height = 601
+  Caption = #1057#1086#1090#1088#1091#1076#1085#1080#1082
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object GroupBox1: TGroupBox
+    Left = 0
+    Top = 0
+    Width = 854
+    Height = 185
+    Align = alTop
+    Caption = #1051#1080#1095#1085#1099#1077' '#1076#1072#1085#1085#1099#1077
+    TabOrder = 0
+    OnExit = GroupBox1Exit
+    object Label1: TLabel
+      Left = 32
+      Top = 32
+      Width = 49
+      Height = 13
+      Caption = #1060#1072#1084#1080#1083#1080#1103
+    end
+    object Label2: TLabel
+      Left = 32
+      Top = 72
+      Width = 37
+      Height = 13
+      Caption = #1047#1074#1072#1085#1080#1077
+    end
+    object Label3: TLabel
+      Left = 32
+      Top = 120
+      Width = 42
+      Height = 13
+      Caption = #1042#1086#1079#1088#1072#1089#1090
+    end
+    object Label4: TLabel
+      Left = 352
+      Top = 32
+      Width = 20
+      Height = 13
+      Caption = #1055#1086#1083
+    end
+    object Label5: TLabel
+      Left = 160
+      Top = 160
+      Width = 31
+      Height = 13
+      Caption = #1040#1076#1088#1077#1089
+    end
+    object Label6: TLabel
+      Left = 352
+      Top = 72
+      Width = 45
+      Height = 13
+      Caption = #1058#1077#1083#1077#1092#1086#1085
+    end
+    object Label7: TLabel
+      Left = 352
+      Top = 120
+      Width = 61
+      Height = 13
+      Caption = #8470' '#1087#1072#1089#1087#1086#1088#1090#1072
+    end
+    object edit1: TDBEdit
+      Left = 104
+      Top = 24
+      Width = 121
+      Height = 21
+      DataField = #1060#1048#1054
+      DataSource = fDM.DS_sotrud
+      TabOrder = 0
+    end
+    object edit2: TDBEdit
+      Left = 104
+      Top = 64
+      Width = 121
+      Height = 21
+      DataField = #1047#1074#1072#1085#1080#1077
+      DataSource = fDM.DS_sotrud
+      TabOrder = 1
+    end
+    object edit3: TDBEdit
+      Left = 104
+      Top = 112
+      Width = 121
+      Height = 21
+      DataField = #1042#1086#1079#1088#1072#1089#1090
+      DataSource = fDM.DS_sotrud
+      TabOrder = 2
+    end
+    object edit6: TDBEdit
+      Left = 424
+      Top = 64
+      Width = 121
+      Height = 21
+      DataField = #1058#1077#1083#1077#1092#1086#1085
+      DataSource = fDM.DS_sotrud
+      TabOrder = 3
+    end
+    object edit5: TDBEdit
+      Left = 424
+      Top = 112
+      Width = 121
+      Height = 21
+      DataField = #1055#1072#1089#1087#1086#1088#1090#1085#1099#1077#1044#1072#1085#1085#1099#1077
+      DataSource = fDM.DS_sotrud
+      TabOrder = 4
+    end
+    object edit4: TDBEdit
+      Left = 216
+      Top = 152
+      Width = 225
+      Height = 21
+      DataField = #1040#1076#1088#1077#1089
+      DataSource = fDM.DS_sotrud
+      TabOrder = 5
+    end
+    object DBComboBox1: TDBComboBox
+      Left = 424
+      Top = 24
+      Width = 121
+      Height = 21
+      DataField = #1055#1086#1083
+      DataSource = fDM.DS_sotrud
+      ItemHeight = 13
+      Items.Strings = (
+        #1084
+        #1078)
+      TabOrder = 6
+    end
+    object DBImage1: TDBImage
+      Left = 672
+      Top = 32
+      Width = 145
+      Height = 129
+      DataSource = fDM.DS_sotrud
+      TabOrder = 7
+    end
+  end
+  object GroupBox2: TGroupBox
+    Left = 0
+    Top = 185
+    Width = 854
+    Height = 152
+    Align = alTop
+    Caption = #1044#1086#1083#1078#1085#1086#1089#1090#1100
+    TabOrder = 1
+    OnExit = GroupBox2Exit
+    object Label8: TLabel
+      Left = 64
+      Top = 34
+      Width = 58
+      Height = 13
+      Caption = #1044#1086#1083#1078#1085#1086#1089#1090#1100
+    end
+    object Label9: TLabel
+      Left = 72
+      Top = 77
+      Width = 32
+      Height = 13
+      Caption = #1054#1082#1083#1072#1076
+    end
+    object Label10: TLabel
+      Left = 424
+      Top = 34
+      Width = 67
+      Height = 13
+      Caption = #1054#1073#1103#1079#1072#1085#1085#1086#1089#1090#1100
+    end
+    object Label11: TLabel
+      Left = 424
+      Top = 77
+      Width = 61
+      Height = 13
+      Caption = #1058#1088#1077#1073#1086#1074#1072#1085#1080#1103
+    end
+    object Label12: TLabel
+      Left = 176
+      Top = 120
+      Width = 63
+      Height = 13
+      Caption = #1055#1088#1080#1084#1077#1095#1072#1085#1080#1077
+    end
+    object edit7: TDBEdit
+      Left = 152
+      Top = 26
+      Width = 121
+      Height = 21
+      DataField = #1044#1086#1083#1078#1085#1086#1089#1090#1100
+      DataSource = fDM.DS_dolg
+      TabOrder = 0
+    end
+    object edit8: TDBEdit
+      Left = 152
+      Top = 69
+      Width = 121
+      Height = 21
+      DataField = #1054#1082#1083#1072#1076
+      DataSource = fDM.DS_dolg
+      TabOrder = 1
+    end
+    object edit9: TDBEdit
+      Left = 520
+      Top = 26
+      Width = 121
+      Height = 21
+      DataField = #1054#1073#1103#1079#1072#1085#1085#1086#1089#1090#1080
+      DataSource = fDM.DS_dolg
+      TabOrder = 2
+    end
+    object edit10: TDBEdit
+      Left = 520
+      Top = 69
+      Width = 121
+      Height = 21
+      DataField = #1058#1088#1077#1073#1086#1074#1072#1085#1080#1103
+      DataSource = fDM.DS_dolg
+      TabOrder = 3
+    end
+    object edit11: TDBEdit
+      Left = 264
+      Top = 112
+      Width = 241
+      Height = 21
+      DataField = #1055#1088#1080#1084#1077#1095#1072#1085#1080#1077
+      DataSource = fDM.DS_dolg
+      TabOrder = 4
+    end
+  end
+  object GroupBox3: TGroupBox
+    Left = 0
+    Top = 337
+    Width = 854
+    Height = 160
+    Align = alTop
+    TabOrder = 2
+    object DBGrid1: TDBGrid
+      Left = 2
+      Top = 15
+      Width = 850
+      Height = 143
+      Align = alClient
+      DataSource = fDM.DS_sotrud
+      ReadOnly = True
+      TabOrder = 0
+      TitleFont.Charset = DEFAULT_CHARSET
+      TitleFont.Color = clWindowText
+      TitleFont.Height = -11
+      TitleFont.Name = 'MS Sans Serif'
+      TitleFont.Style = []
+    end
+  end
+  object Button1: TButton
+    Left = 24
+    Top = 511
+    Width = 121
+    Height = 25
+    Caption = #1057#1086#1093#1088#1072#1085#1080#1090#1100' '#1080' '#1074#1099#1081#1090#1080
+    TabOrder = 3
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Left = 176
+    Top = 511
+    Width = 89
+    Height = 25
+    Caption = #1044#1086#1073#1072#1074#1080#1090#1100' '#1077#1097#1077
+    TabOrder = 4
+    OnClick = Button2Click
+  end
+  object DBNavigator1: TDBNavigator
+    Left = 568
+    Top = 511
+    Width = 224
+    Height = 25
+    VisibleButtons = [nbFirst, nbPrior, nbNext, nbLast]
+    TabOrder = 5
+  end
+end

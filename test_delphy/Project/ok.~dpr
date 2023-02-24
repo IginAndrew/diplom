@@ -1,0 +1,15 @@
+program ok;
+
+uses
+  Forms,
+  Main in 'Main.pas' {fName},
+  DM in 'DM.pas' {fDM: TDataModule};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TfName, fName);
+  Application.CreateForm(TfDM, fDM);
+  Application.Run;
+end.

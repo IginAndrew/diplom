@@ -1,0 +1,214 @@
+body {
+    font-family: "Ubuntu","Roboto",sans-serif;
+    font-weight: 300;
+    font-size: 11pt;
+    margin: 0;
+    display: flex
+}
+
+aside {
+    width: 200px;
+    max-width: 200px;
+    min-width: 200px
+}
+
+aside,aside * {
+    margin: 5px
+}
+
+aside *,body,h3,main {
+    padding: 5px
+}
+
+main {
+    float: right;
+    width: 100%
+}
+
+.adress,.name,.pay,.phone,.product {
+    border: solid 1px #bbb
+}
+
+.buttons>* {
+    box-shadow: inset 0 0 0 1px #00000036
+}
+
+h3 {
+    text-align: center;
+    border-bottom: solid 2px #333;
+    color: #333;
+    margin: 10px 5px;
+}
+
+.order {
+    border: solid 1px #bbb;
+    border-radius: 5px;
+    margin: 5px 5px 15px
+}
+
+.products>* {
+    display: inline-block
+}
+
+.adress,.name,.pay,.phone,.product {
+    display: inline-block;
+    margin: 5px;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #e9e9e9
+}
+
+.products {
+    border-top: solid 1px #bbb
+}
+
+.title {
+    font-weight: 400
+}
+
+.buttons {
+    border-top: solid 1px #bbb;
+    display: flow-root
+}
+
+.buttons>* {
+    float: right;
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 5px;
+    color: #fff;
+    font-weight: 400;
+    border-radius: 5px
+}
+
+.old_order {
+    background-color: #37a737
+}
+
+.rm_order {
+    background-color: #b32121
+}
+
+.buttons>*,aside button {
+    cursor: pointer
+}
+
+aside button {
+    border: 0;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 11pt;
+    text-align: left;
+    padding-left: 10px;
+    box-shadow: inset 0 0 0 1px #bbb;
+    display: block;
+    width: 100%
+}
+
+aside button:hover {
+    background-color: #d1d1d1
+}
+
+section button {
+    border: 0;
+    color: #333!important
+}
+
+.card-buttons button,header * {
+    margin: 5px;
+    padding: 3px 10px;
+    cursor: pointer
+}
+
+section {
+    display: grid
+}
+
+.card {
+    border: solid 1px #bbb;
+    margin: 5px;
+    border-radius: 2px
+}
+
+.card-buttons {
+    float: right
+}
+
+.card .title {
+    float: left;
+    margin: 7px
+}
+
+.card-buttons button {
+    border: solid 1px gray;
+    border-radius: 4px;
+    padding: 2px 10px
+}
+
+.modal-add-card {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff
+}
+
+.modal-add-card header .close-modal,aside {
+    float: left
+}
+
+.modal-add-card header .save-modal {
+    float: right
+}
+
+.group-inputs {
+    margin-top: 50px
+}
+
+.group-inputs .grid {
+    display: grid;
+    width: 100%
+}
+
+.flex {
+    display: flex
+}
+
+.group-inputs>label,input,textarea {
+    margin: 5px;
+    padding: 5px
+}
+
+label {
+    font-weight: 500;
+    margin: 10px 10px 0
+}
+
+.group-inputs {
+    display: grid
+}
+
+.modal-add-card {
+    display: none
+}
+
+.grid,.settings {
+    display: grid
+}
+
+.flex .grid {
+    width: 100%
+}
+
+button.save-config {
+    float: right;
+    padding: 5px 10px;
+    margin: 10px 5px;
+    cursor: pointer
+}
+
+.settings {
+    padding-bottom: 10px;
+    border-bottom: solid 2px #333
+}
